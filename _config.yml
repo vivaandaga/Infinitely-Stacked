@@ -14,7 +14,7 @@ author:
   email:        chesterhow@gmail.com
 
 # Build settings
-markdown:       KaTeX
+markdown:       kramdown
 include:
   - _pages
 
