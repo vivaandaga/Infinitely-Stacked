@@ -5,4 +5,7 @@ author: "Vivaan Daga"
 permalink: /about/
 ---
 
-Hi! I am currently a student at TSRS Moulsari. I created this blog to share some interesting pieces of mathematics.
+Hi! I am Vivaan Daga, currently a student at TSRS Moulsari. I am primarily interested in mathematics and created this blog to write about my mathemaical musings. Hopefully someonelse finds them interesting too!
+
+
+
