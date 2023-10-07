@@ -28,3 +28,4 @@ $$
 $$
 
 The following is a math block $x^2\sin(x)\cos(x)$
+<script src="https://unpkg.com/@lyket/widget@latest/dist/lyket.js?apiKey=pt_66df15dfbc78920218145f5b7ee867"></script>
