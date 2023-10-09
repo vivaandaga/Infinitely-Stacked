@@ -7,6 +7,15 @@ usemathjax: true
 
 
 ---
+# Contents
+{:.no_toc}
+
+* Will be replaced with the ToC, excluding the "Contents" header
+{:toc}
+
+# H1 header
+
+## H2 header
 
 Here we see **Tale's** pagination feature in action. It is set to 5 posts per page by default. Feel free to change this number in the `_config.yml` file!
 
