@@ -2,7 +2,7 @@
 layout: post
 title: "Extending The Lebesgue Measure"
 author: "Vivaan Daga"
-tags: Tale
+tags: Measure-theory, Set-theory
 usemathjax: true
 
 
@@ -14,16 +14,15 @@ usemathjax: true
 {:toc}
 
 # Introduction
-The problem of assigning measure(length, area, volume, hyper-volume) to subsets in $\mathbb{R}^d$  and its deep connection with the theory of integral has been examined by several mathematicians of the 19th century including Augustin Cauchy, Lejeune Dirichlet, Bernhard Riemann, Camille Jordan, Emile Borel, Henri Lebesgue, and Giuseppe Vitali(see \cite{Eg}). \newline The ultimate dream was to find a measure $m:\mathcal{P}(\mathbb{R})\to[0,\infty]$ on \textit{all} subsets of $\mathbb{R}^d$ satisfying the following properties:
-\begin{itemize}
-  \item $m([0,1]^d)=1$.
-  \item If $E_n$ is a countable collection of pairwise disjoint sets in $\mathbb{R}^d$, then $m(\bigcup E_n)=\sum_{n=1}^{\infty} m(E_n)$. (Countable Additivity)
-  \item If $\tau$ is a rigid-motion from $\mathbb{R}^d\to \mathbb{R}^d$ and $E$ is a subset of $\mathbb{R}^d$ then $m(E)=m(\tau(E))$. (Invariance under rigid-motions)
-\end{itemize}
-\newline 
-Unfortunately, the dream was shattered\footnote{This shattering is even more spectacular in $\mathbb{R}^d$ with $d\ge 3$, since no such measure exists even if we replace countable additivity by finite additivity(see \cite{Wag})} by Giuesspe Vitali (see \cite{Vit}) by his construction of the so-called ``Vitali set'', Indeed Vitali proved that no such measure could exist on all subsets of $\mathbb{R}^d$. 
+The problem of assigning measure(length, area, volume, hyper-volume) to subsets in $\mathbb{R}^d$  and its deep connection with the theory of integral has been examined by several mathematicians of the 19th century including Augustin Cauchy, Lejeune Dirichlet, Bernhard Riemann, Camille Jordan, Emile Borel, Henri Lebesgue, and Giuseppe Vitali. The ultimate dream was to find a measure $m:\mathcal{P}(\mathbb{R})\to[0,\infty]$ on all subsets of $\mathbb{R}^d$ satisfying the following properties:
+
+- $$m([0,1]^d)=1$$.
+- If $$E_n$$ is a countable collection of pairwise disjoint sets in $$\mathbb{R}^d$$, then $$m(\bigcup E_n)=\sum_{n=1}^{\infty} m(E_n)$$. (Countable Additivity)
+- If $$\tau$$ is a rigid-motion from $$\mathbb{R}^d\to \mathbb{R}^d$$ and $$E$$ is a subset of $$\mathbb{R}^d$$ then $$m(E)=m(\tau(E))$$. (Invariance under rigid-motions)
+
+Unfortunately, the dream was shattered by Giuesspe Vitali by his construction of the so-called "Vitali set". Indeed, Vitali proved that no such measure could exist on all subsets of $$\mathbb{R}^d$$. 
 \newline
-Not all hope was lost however, even though one can not have such a measure on all subsets of $\mathbb{R}^d$, one can still hope to have a measure on a ``large" subset of $\mathcal{P}(\mathbb{R}^d)$ that suffices for all practical purposes, and this is exactly what the Lebesgue measure is, on the family of Lebesgue measurable sets. It turns out that the the family of Lebesgue measurable sets is large enough that for all practial purposes of analysis the measure problem is solved, however it is it remains an interesting question to ask "How much can we extend Lebesgue Measure" while trying to retian its properties 
+Not all hope was lost however, even though one can not have such a measure on all subsets of $$\mathbb{R}^d$$, one can still hope to have a measure on a "large" subset of $$\mathcal{P}(\mathbb{R}^d)$$ that suffices for all practical purposes, and this is exactly what the Lebesgue measure is, on the family of Lebesgue measurable sets. It turns out that the the family of Lebesgue measurable sets is large enough that for all practial purposes of analysis the measure problem is solved, however it is it remains an interesting question to ask "How much can we extend Lebesgue Measure" while trying to retian its properties. This shall be our aim for this blog, but to ask this question precsicely we need to set up several definitions.
 
 # The set up
 
